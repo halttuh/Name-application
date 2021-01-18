@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Application</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=solita.fi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container -->
+    <div class="container" id="container">
+        <!-- Title -->
+        <h1>Name Application</h1>
+        <!-- Sorting information -->
+        <div class="sorting-info" id="sorting-info">
+            <p><strong>Sort the table by clicking the buttons below</strong></p>
+            <button class="sort-names" id="sort-names" type="button">A to Z</button>
+            <button class="sort-amounts" id="sort-amounts" type="button">High to low</button>
+        </div>     
+        <!-- List -->
+        <div class="names-list" id="names-list">
+            <table class="names-table" id="names-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Totals calculator -->
+    <div class="total-amount" id="total-amount">
+        <p class="total-body" id="total-body">Total amount of all the names is:</p>
+        <p class="total" id="total"></p>
+    </div>
+    <!-- Script -->
+    <script type="module" src="script.js"></script>
+    <script src='names.json'></script>
+</body>
+</html>

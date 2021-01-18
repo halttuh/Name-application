@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Rubik, sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0 20px 0;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+button {
+    text-align: center;
+    margin: 10px 5px 30px 5px;
+    padding: 10px 30px;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    color: white;
+    background: #DC1E32;
+    border-style: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background: #81121d;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-width: 1px;
+    border-color: #c5c5c5;
+    border-spacing: 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 40px 10px 22px;
+}
+
+tr:nth-child(even) {
+    background-color: #c5c5c5;
+}
+
+.table-headings {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.total-amount {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Data Container */
+.container {
+    margin: 10px 30%;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .container {
+        margin: 10px;
+    }
+}
